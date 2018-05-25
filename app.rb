@@ -11,5 +11,4 @@ class App < Sinatra::Base
    "My name is #{params[:team_name}."
   end
 
-
 end
