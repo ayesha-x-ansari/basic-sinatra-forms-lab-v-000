@@ -8,7 +8,7 @@ class App < Sinatra::Base
 
   post '/team' do
     puts params
-  # "My name is #{params[:name]}, and I love #{params[:favorite_food]}"
+   "My name is #{params[:team_name}."
   end
 
 
