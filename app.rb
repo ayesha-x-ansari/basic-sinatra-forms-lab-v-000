@@ -1,4 +1,5 @@
 require 'sinatra/base'
+require_relative 'config/environment'
 
 class App < Sinatra::Base
 
@@ -7,13 +8,13 @@ class App < Sinatra::Base
   end
 
   post '/team' do
-    @team_name = params["team_name"]
+    @name = params["name"]
     @coach = params["coach"]
-    @point_gaurd = params["point_gaurd"]
-    @shooting_gaurd = params["shooting_gaurd"]
-    @small_forward = params["small_forward"]
-    @power_forward = params["power_forward"]
-    @power = params["power"]
+    @pg = params["pg"]
+    @sg = params["sg"]
+    @sf = params["sf"]
+    @pf = params["pf"]
+    @c = params["c"]
     erb :team
 
   end
