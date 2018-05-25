@@ -15,7 +15,7 @@ class App < Sinatra::Base
     @power_forward = params["power_forward"]
     @power = params["power"]
     erb :team
-    
+
   end
 
 end
